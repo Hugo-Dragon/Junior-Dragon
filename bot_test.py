@@ -46,5 +46,5 @@ async def on_message(message):
         else:
             await message.channel.send(f"{message.author.mention} 逼我說「{tmp[1]}」")
 
-client.run('OTE2ODg1MDE2MjYzNDAxNDky.Yawptg.FY_UHQMxP07gT-l9QbuEC7V_Z-4')
+client.run('')
 
