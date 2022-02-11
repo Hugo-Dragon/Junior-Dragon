@@ -5,7 +5,7 @@ import json
 with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile) #import setting.json
 
-import random #隨機取數Packge
+import random #隨機取數模組
 import datetime
 import asyncio
 import os
