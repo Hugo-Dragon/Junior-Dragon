@@ -15,7 +15,7 @@ import pytz
 class Main(Cog_Extension):
     @commands.command() #ping command
     async def ping(self, ctx):
-        await ctx.send(f"目前延遲時間:{round(self.bot.latency*1000)} (ms)")
+        await ctx.send(f"🇵 🇴 🇳 🇬❗| 目前延遲:{round(self.bot.latency*1000)} (ms)")
 
     @commands.command()
     async def botabout(self, ctx):
