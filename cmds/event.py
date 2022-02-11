@@ -34,7 +34,7 @@ class Event(Cog_Extension):
         noubot_reply= random.choice(noubot_select)
 
         if msg.content == "爛bot" and msg.author != self.bot.user:
-            await msg.channel.send(noubot_reply) 
+            await msg.channel.send(noubot_reply)
 
 
 def setup(bot):
