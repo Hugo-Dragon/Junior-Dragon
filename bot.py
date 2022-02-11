@@ -8,7 +8,7 @@ with open("setting.json", mode="r", encoding="utf8") as jfile:
 import random #隨機取數模組
 import datetime
 import asyncio
-import os 
+import os
 import pytz
 
 bot = commands.Bot(command_prefix=">") #定義主程式的"bot"為command.Bot,前綴為">"
