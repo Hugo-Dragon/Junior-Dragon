@@ -6,4 +6,3 @@ First,open Terminal,use cd command to open ~/Python/Discord.Bot/PY_Attano,then r
 ```cmd
 python3 bot.py
 ```
- 
