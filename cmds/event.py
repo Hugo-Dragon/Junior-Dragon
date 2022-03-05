@@ -17,20 +17,20 @@ class Event(Cog_Extension):
             random_030 = random.choice(jdata[".3."]) #隨機取setting.json的.3.項目
             await msg.channel.send(random_030)
 
-        ABAB_reply_select= ["ABAB", "<:ABAB:846568946722799646>"]
+        ABAB_reply_select= ["ABAB", "<:AB:949465980520792124>"]
         ABAB_reply= random.choice(ABAB_reply_select)
-        if msg.content == "<:ABAB:846568946722799646>" and msg.author != self.bot.user:
+        if msg.content == "<:AB:949465980520792124>" and msg.author != self.bot.user:
             await msg.channel.send(ABAB_reply)
 
         if msg.content == "早安" and msg.author != self.bot.user:
-            await msg.reply("<:Morning:847652251107196939>")
+            await msg.reply("早安awa")
 
-        react_OAO_select= ["<:emmm:846569832823783436>", "<:cat_17:935731635440214027>", "<:emoji_14:833126188608127056>"]
+        react_OAO_select= ["<:emm_:949465980378173480>", "<:Thonk:916885587447934986>"]
         react_OAO= random.choice(react_OAO_select)
         if msg.content.endswith("OAO"):
             await msg.add_reaction(react_OAO)
 
-        noubot_select= ["笑死", "爛bot", "<:emoji_13:833126152742502481>"]
+        noubot_select= ["笑死", "爛bot", "不是在說我吧QAQ"]
         noubot_reply= random.choice(noubot_select)
 
         if msg.content == "爛bot" and msg.author != self.bot.user:

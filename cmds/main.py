@@ -7,7 +7,7 @@ with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile)
 
 import random
-import datetime
+import datetime, time
 
 import asyncio
 import pytz
@@ -20,9 +20,9 @@ class Main(Cog_Extension):
     @commands.command()
     async def botabout(self, ctx):
         twtz = pytz.timezone("Asia/Taipei")
-        timestamp= datetime.datetime.now().replace(tzinfo=twtz)
+        timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         embed=discord.Embed(title="About the bot", description="PY_Attano#9288"  ,color=0x00b1ff)
-        embed.set_author(name="恐龍#2549", icon_url="https://i.imgur.com/ZU4KKfX.gif")
+        embed.set_author(name="恐龍#2549", icon_url="")
         embed.set_thumbnail(url="https://i.imgur.com/369RMge.png")
         embed.add_field(name="Made by", value="恐龍#2549", inline=True)
         embed.add_field(name="Made with", value="Python3", inline=True)
@@ -44,7 +44,7 @@ class Main(Cog_Extension):
     @commands.command()
     async def dev(self, ctx):
         twtz = pytz.timezone("Asia/Taipei")
-        timestamp= datetime.datetime.now().replace(tzinfo=twtz)
+        timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         embed=discord.Embed(title="開發團隊", description="開發團隊列表", color=0xffbb00)
         embed.add_field(name="程式撰寫", value="恐龍#2549", inline=True)
         embed.add_field(name="機器人管理", value="恐龍#2549", inline=True)

@@ -6,10 +6,11 @@ with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile) #import setting.json
 
 import random #隨機取數模組
-import datetime
+import datetime, time
 import asyncio
 import os
 import pytz
+import keep_alive
 
 bot = commands.Bot(command_prefix=">") #定義主程式的"bot"為command.Bot,前綴為">"
 bot.remove_command("help")
@@ -38,7 +39,7 @@ async def reload(ctx, extension):
 @bot.group(invoke_without_command=True)
 async def help(ctx):
     twtz = pytz.timezone("Asia/Taipei")
-    timestamp= datetime.datetime.now().replace(tzinfo=twtz)
+    timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     embed=discord.Embed(title="Help", description="使用 >help <指令類別> 以取得該指令之更詳細使用方法", color=0xffbb00)
     embed.add_field(name="指令分類", value="Attano指令分類", inline=False)
     embed.add_field(name="Main", value="ping、say、repeat、botabout、dev", inline=False)
@@ -50,7 +51,7 @@ async def help(ctx):
 @help.command()
 async def Main(ctx):
     twtz = pytz.timezone("Asia/Taipei")
-    timestamp= datetime.datetime.now().replace(tzinfo=twtz)
+    timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     embed=discord.Embed(title="Main", description="主要指令", color=0x0084ff)
     embed.add_field(name="ping", value="查看機器人目前延遲", inline=False)
     embed.add_field(name="say", value="讓機器人替你說話", inline=False)
@@ -63,7 +64,7 @@ async def Main(ctx):
 @help.command()
 async def React(ctx):
         twtz = pytz.timezone("Asia/Taipei")
-        timestamp= datetime.datetime.now().replace(tzinfo=twtz)
+        timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         embed=discord.Embed(title="React", description="反應指令", color=0x00d103)
         embed.add_field(name="idk", value="發送一個窩不知道gif", inline=False)
         embed.add_field(name="thonk", value="隨機發送一個thonk貼圖", inline=False)
@@ -75,4 +76,5 @@ for filename in os.listdir("./cmds"):
         bot.load_extension(f"cmds.{filename[:-3]}")
 
 if __name__ == "__main__" :
+    keep_alive.keep_alive()
     bot.run(jdata["token"])

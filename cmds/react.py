@@ -7,7 +7,7 @@ with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile)
 
 import random
-import datetime
+import datetime, time
 import asyncio
 
 class React(Cog_Extension):
