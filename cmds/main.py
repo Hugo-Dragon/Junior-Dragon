@@ -1,19 +1,15 @@
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
-import json
 
+import json
 with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile)
 
-import random
-import datetime, time
-
-import asyncio
-import pytz
+import random, datetime, time, asyncio, pytz
 
 class Main(Cog_Extension):
-    @commands.command() #ping command
+    @commands.command() 
     async def ping(self, ctx):
         await ctx.send(f"🇵 🇴 🇳 🇬❗| 目前延遲:{round(self.bot.latency*1000)} (ms)")
 
@@ -30,7 +26,7 @@ class Main(Cog_Extension):
         await ctx.send(embed=embed)
     @commands.command()
     async def say(self, ctx,  *,msg):
-        await ctx.message.delete() #msg為user發送的訊息內容
+        await ctx.message.delete()
         await ctx.send(msg)
 
     @commands.command()

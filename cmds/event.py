@@ -1,20 +1,18 @@
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
-import json
 
+import json
 with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile)
 
-import random
-import datetime
-import asyncio
+import random, datetime, asyncio
 
 class Event(Cog_Extension):
-    @commands.Cog.listener() #on_message關鍵字觸發
+    @commands.Cog.listener() 
     async def on_message(self, msg):
-        if msg.content.endswith(".3."): #結尾為.3.
-            random_030 = random.choice(jdata[".3."]) #隨機取setting.json的.3.項目
+        if msg.content.endswith(".3."): 
+            random_030 = random.choice(jdata[".3."]) 
             await msg.channel.send(random_030)
 
         ABAB_reply_select= ["ABAB", "<:AB:949465980520792124>"]

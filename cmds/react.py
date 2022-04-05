@@ -1,17 +1,15 @@
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
-import json
 
+import json
 with open("setting.json", mode="r", encoding="utf8") as jfile:
     jdata = json.load(jfile)
 
-import random
-import datetime, time
-import asyncio
+import random, datetime, time, asyncio
 
 class React(Cog_Extension):
-    @commands.command() #idk command
+    @commands.command()
     async def idk(self, ctx):
         idk = discord.File(jdata["idkqwq"])
         await ctx.message.delete()
