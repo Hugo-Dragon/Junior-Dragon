@@ -3,8 +3,8 @@ from discord.ext import commands
 from core.classes import Cog_Extension
 
 import json
-with open("setting.json", mode="r", encoding="utf8") as jfile:
-    jdata = json.load(jfile)
+with open("config.json", mode="r", encoding="utf8") as jfile:
+    conf = json.load(jfile)
 
 import random, datetime, time, asyncio, pytz
 
@@ -18,10 +18,10 @@ class Main(Cog_Extension):
         twtz = pytz.timezone("Asia/Taipei")
         timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         embed=discord.Embed(title="About the bot", description="PY_Attano#9288"  ,color=0x00b1ff)
-        embed.set_author(name="恐龍#2549", icon_url="")
+        embed.set_author(name="恐龍#2549", icon_url="https://imgur.com/yh0Gerr")
         embed.set_thumbnail(url="https://i.imgur.com/369RMge.png")
         embed.add_field(name="Made by", value="恐龍#2549", inline=True)
-        embed.add_field(name="Made with", value="Python3", inline=True)
+        embed.add_field(name="Made with", value="Python3.8", inline=True)
         embed.set_footer(text=timestamp)
         await ctx.send(embed=embed)
     @commands.command()

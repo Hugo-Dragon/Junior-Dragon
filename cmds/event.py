@@ -3,8 +3,8 @@ from discord.ext import commands
 from core.classes import Cog_Extension
 
 import json
-with open("setting.json", mode="r", encoding="utf8") as jfile:
-    jdata = json.load(jfile)
+with open("config.json", mode="r", encoding="utf8") as jfile:
+    conf = json.load(jfile)
 
 import random, datetime, asyncio
 
@@ -12,7 +12,7 @@ class Event(Cog_Extension):
     @commands.Cog.listener() 
     async def on_message(self, msg):
         if msg.content.endswith(".3."): 
-            random_030 = random.choice(jdata[".3."]) 
+            random_030 = random.choice(conf[".3."]) 
             await msg.channel.send(random_030)
 
         ABAB_reply_select= ["ABAB", "<:AB:949465980520792124>"]
