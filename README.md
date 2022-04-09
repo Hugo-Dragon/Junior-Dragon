@@ -13,6 +13,7 @@ Just a lan bot.
 bot採用Python 3.8編寫
 
 ## 依賴項
+```
 ▸ discord.py
 ▸ asyncio
 ▸ random
@@ -22,4 +23,5 @@ bot採用Python 3.8編寫
 ▸ os
 ▸ pytz
 ▸ keep_alive
-_P.S.除`discord.py`和`asyncio`外，其餘請自行斟酌決定是否要使用，部份為安裝Python時就有的套件。
+```
+_P.S.除`discord.py`和`asyncio`外，其餘請自行斟酌決定是否要使用，部份為安裝Python時就有的套件。_
