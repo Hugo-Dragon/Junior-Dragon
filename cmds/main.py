@@ -1,6 +1,8 @@
+from click import command
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
+from discord import Game
 
 import json
 with open("config.json", mode="r", encoding="utf8") as jfile:
@@ -36,7 +38,9 @@ class Main(Cog_Extension):
     @commands.command()
     async def clean(self, ctx, num: int):
         await ctx.channel.purge(limit=num+1)
-
+        OK = await ctx.send("訊息已清理完畢^__^")
+        await asyncio.sleep(3)
+        await OK.delete()
     @commands.command()
     async def dev(self, ctx):
         twtz = pytz.timezone("Asia/Taipei")
@@ -48,6 +52,27 @@ class Main(Cog_Extension):
         embed.add_field(name="P.S.", value="反正都是恐龍#2549管啦awa", inline=True)
         embed.set_footer(text=timestamp)
         await ctx.send(embed=embed)
+    
+    @commands.command() ### 尚未成功
+    async def presence(self, ctx, type=None, *, game=None):
+        '''Change the bot's presence'''
+        if type is None:
+            await ctx.send(f'Usage: `{ctx.prefix}presence [game/stream/watch/listen] [message]`')
+        else:
+            if type.lower() == 'game':
+                await self.bot.change_presence(game=discord.Game(name=game))
+                await ctx.send(f'Set presence to `Playing {game}`')
+            elif type.lower() == 'watch':
+                await self.bot.change_presence(game=discord.Game(name=game, type=3), afk=True)
+                await ctx.send(f'Set presence to `Watching {game}`')
+            elif type.lower() == 'listen':
+                await self.bot.change_presence(game=discord.Game(name=game, type=2), afk=True)
+                await ctx.send(f'Set presence to `Listening to {game}`')
+            elif type.lower() == 'clear':
+                await self.bot.change_presence(game=None)
+                await ctx.send('Cleared Presence')
+            else:
+                await ctx.send('Usage: `.presence [game/stream/watch/listen] [message]`') 
 
 
 def setup(bot):
