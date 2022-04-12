@@ -13,6 +13,8 @@ Just a lan bot.
 ## 注意
 bot採用Python 3.8編寫
 
+然後`./test/`的東西"建議"不要理他，改掉然後亂執行，沒人會幫你，除非是AC0xRPFS001電神。
+
 ## 執行方式
 ```cmd
 $ python app.py

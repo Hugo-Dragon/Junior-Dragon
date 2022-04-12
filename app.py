@@ -16,9 +16,10 @@ timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
 @bot.event
 async def on_ready():
-    print('>>Login as', bot.user) 
-    ing=discord.Activity(type=discord.ActivityType.playing,name="Surviv.io") 
-    await bot.change_presence(status=discord.Status.online, activity=ing)
+    print("Bot logined")
+    print(bot.user)
+    print("-----------") 
+    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.listening, name="C.Debussy-Clair de lune"))
 
 @bot.command()
 async def load(ctx, extension):
@@ -86,7 +87,7 @@ async def Music(ctx):
 @help.command()
 async def Game(ctx):
     embed=discord.Embed(title="Game", description="遊戲指令區（開發中）", color=0x00d103)
-    embed.add_field(name="")
+    embed.add_field(name="gn", value="猜數字遊戲", inline=False)
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
 
