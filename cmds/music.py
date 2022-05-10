@@ -41,7 +41,7 @@ class Music(Cog_Extension):
             URL = info['url']
             voice.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
             voice.is_playing()
-            await ctx.send("開始播放"))
+            await ctx.send("開始播放")
 
         # check if the bot is already playing
         else:
@@ -55,7 +55,7 @@ class Music(Cog_Extension):
 
         if not voice.is_playing():
             voice.resume()
-            await ctx.send("繼續播放"))
+            await ctx.send("繼續播放")
 
     # command to pause voice if it is playing
     @commands.command()
