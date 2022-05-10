@@ -19,7 +19,7 @@ bot採用Python 3.8編寫
 ```cmd
 $ python app.py
 ```
-_*需先將terminal cd到專案中*_
+_為求方便，Windows使用者可以直接運行`run.bat`檔案，Linux使用者可以使用`run.sh`檔案直接自動執行_
 ## 依賴項
 ```
 ▸ discord.py
