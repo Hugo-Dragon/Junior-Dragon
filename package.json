@@ -1,0 +1,14 @@
+{
+    "name": "py_attano",
+    "version": "beta 0.0.1",
+    "Author": "hugocoding",
+    "main": "app.py",
+    
+    "dependencies": {
+        "python": "^3.8",
+        "pip": "^20.0.2",
+        "discord.py": "^1.7.3",
+        "asyncio": "^3.4.3",
+        "pytz": "^2019.3"
+    }
+}
