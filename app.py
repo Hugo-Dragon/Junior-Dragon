@@ -16,7 +16,7 @@ timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
 @bot.event
 async def on_ready():
-    print("Bot logined")
+    print("Bot logged")
     print(bot.user)
     print("-----------") 
     await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.listening, name="C.Debussy-Clair de lune"))
