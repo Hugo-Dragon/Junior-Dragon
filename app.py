@@ -1,3 +1,8 @@
+"""
+***************PY_Attano Bot***************
+*************Author:hugocoding*************
+**************Version: 0.0.1***************
+"""
 import discord
 from discord.ext import commands
 
