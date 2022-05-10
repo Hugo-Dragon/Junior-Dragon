@@ -1,0 +1,19 @@
+{
+  "name": "PY-Attano",
+  "description": "HugoCoding's bot source",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugocoding/PY_Attano.git"
+  },
+  "keywords": [],
+  "author": "hugocoding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugocoding/PY_Attano/issues"
+  },
+  "homepage": "https://github.com/hugocoding/PY_Attano"
+}
