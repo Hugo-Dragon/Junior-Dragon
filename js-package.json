@@ -1,6 +1,7 @@
 {
   "name": "PY-Attano",
   "description": "HugoCoding's bot source",
+  "main": "using-javascript.js",
   "version": "0.0.1",
   "scripts": {
     "start": "node ."
