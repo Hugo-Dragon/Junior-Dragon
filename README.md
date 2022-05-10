@@ -10,6 +10,9 @@ Just a lan bot.
 然後功能可以自己去看Cog跟最基本的一些教學。
 基本上功能都是最基本的code。
 
+Replit Users: Fork this repo and install packages,
+at last, use `bash run.sh` to run the bot.
+
 ## 注意
 bot採用Python 3.8編寫
 
@@ -32,4 +35,6 @@ _為求方便，Windows使用者可以直接運行`run.bat`檔案，Linux使用�
 ▸ pytz
 ▸ keep_alive
 ```
-*P.S.除`discord.py`和`asyncio`外，其餘請自行斟酌決定是否要使用，部份為安裝Python時就有的套件。*
+**P.S.** *除`discord.py`和`asyncio`外，其餘請自行斟酌決定是否要使用，部份為安裝Python時就有的套件。*
+
+Thanks to KL AE#2190 to add something.
