@@ -1,0 +1,12 @@
+discord.py>=1.7.3
+pytz>=2019.3
+asyncio>=3.4.3
+keep_alive
+os
+time
+datetime
+json
+random
+pip>=20.0.2
+flask
+~        
