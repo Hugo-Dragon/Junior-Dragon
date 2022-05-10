@@ -37,4 +37,4 @@ _為求方便，Windows使用者可以直接運行`run.bat`檔案，Linux使用�
 ```
 **P.S.** *除`discord.py`和`asyncio`外，其餘請自行斟酌決定是否要使用，部份為安裝Python時就有的套件。*
 
-Thanks to KL AE#2190 to add something.
+Thanks to KL AE#2160 to add something.
