@@ -20,18 +20,18 @@ class Event(Cog_Extension):
         if msg.content == "<:AB:949465980520792124>" and msg.author != self.bot.user:
             await msg.channel.send(ABAB_reply)
 
-        if msg.content == "早安" and msg.author != self.bot.user:
-            await msg.reply("早安awa")
+        if msg.content == "Morning" and msg.author != self.bot.user:
+            await msg.reply("Morning~")
 
         react_OAO_select= ["<:emm_:949465980378173480>", "<:Thonk:916885587447934986>"]
         react_OAO= random.choice(react_OAO_select)
         if msg.content.endswith("OAO"):
             await msg.add_reaction(react_OAO)
 
-        noubot_select= ["笑死", "爛bot", "不是在說我吧QAQ"]
+        noubot_select= ["noob bot", "lan bot", "lag bot", "lan bot"]
         noubot_reply= random.choice(noubot_select)
 
-        if msg.content == "爛bot" and msg.author != self.bot.user:
+        if msg.content == "lan bot" and msg.author != self.bot.user:
             await msg.channel.send(noubot_reply)
 
 

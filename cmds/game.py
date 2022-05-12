@@ -15,22 +15,22 @@ class Game(Cog_Extension):
         def check(m):
             return m.author == ctx.author and m.channel == ctx.message.channel
         number = random.randint(1,100)
-        await ctx.send("請從1~100之間猜一個數字，一共有10次機會")
+        await ctx.send("Please guess a number from 1~100, you have 10 chances")
 
         for i in range(0,10):
             guess = await self.bot.wait_for("message", check=check)
     
             if int(guess.content) > number:
-                await ctx.send("太大了..")
+                await ctx.send("Too little")
             elif int(guess.content) < number:
-                await ctx.send("太小了..")
+                await ctx.send("Too Large")
             elif int(guess.content) == number:
-                await ctx.send("你終於完成這個愚蠢的遊戲了")
+                await ctx.send("You finally finish this stupid game!!")
             else:
-                await ctx.send("請猜1~100之間的整數，不要給我亂來")
+                await ctx.send("Please guess the number FROM 1 TO 100")
         else:
-            await ctx.send("笑死，這都猜不中，有夠雖，可憐awa")
-            await ctx.send(f"正確答案是:{number} ")
+            await ctx.send("Haha, you did NOT guess the correct number.")
+            await ctx.send(f"The Correct Number is:{number} ")
 
 
 
