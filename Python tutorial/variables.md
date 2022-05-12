@@ -59,3 +59,6 @@ print(x)
 print(y)
 print(z)
 ```
+
+# Output
+use `print(x, y, z)` instead of `print(x+y+z)` else it will not show the spaces between them
