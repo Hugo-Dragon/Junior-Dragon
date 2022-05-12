@@ -20,7 +20,7 @@ class React(Cog_Extension):
         random_thonk = random.choice(conf["thonk"])
         await ctx.message.delete()
         await ctx.send(random_thonk)
-
+        
 
 def setup(bot):
     bot.add_cog(React(bot))
