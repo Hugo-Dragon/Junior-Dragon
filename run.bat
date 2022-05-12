@@ -11,7 +11,7 @@ IF ERRORLEVEL 1 GOTO run
 :run
 echo Running Bot, Please wait...
 echo Python Version:
-python -version
+python --version
 echo `n
 python app.py
 
