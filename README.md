@@ -1,29 +1,27 @@
 # PY_Attano
-使用純Python進行撰寫的bot，以discord.py模組編寫。
+A Simple Discord bot that written with `discord.py` (Python)
 
-## 說明
-Just a lan bot.
+## Introduce
+Just a easy&noob bot.
 
-## 我也想要一份自己的
-自己來。
-可以直接fork這份專案，把`config.json`裡面的token改成你自己的就好。
-然後功能可以自己去看Cog跟最基本的一些教學。
-基本上功能都是最基本的code。
+## I Want The Same One of Myself 
+Just Do it by yourself.
+You can fork this project，change the `token` to your bot in `config.json`.
+And you can go to learn how to code a `Cog_Extension`.
+The code is the most basic.
 
-Replit Users: Fork this repo and install packages,
-at last, use `bash run.sh` to run the bot.
+Replit Users: Fork this repo and install packages, at last, use `bash run.sh` to run the bot.
 
-## 注意
-bot採用Python 3.8編寫
+## Attention
+The Bot is written with `Python 3.8`.
 
-然後`./test/`的東西"建議"不要理他，改掉然後亂執行，沒人會幫你，除非是AC0xRPFS001電神。
-
-## 執行方式
+## How To Run The Bot 
 ```cmd
 $ python app.py
 ```
-_為求方便，Windows使用者可以直接運行`run.bat`檔案，Linux使用者可以使用`run.sh`檔案直接自動執行_
-## 依賴項
+**Windows Users can run the bot via `run.bat`.**
+**Linux and Mac Users can run the bot via `run.sh`.**
+## Dependencies
 ```
 ▸ discord.py
 ▸ asyncio
@@ -36,6 +34,8 @@ _為求方便，Windows使用者可以直接運行`run.bat`檔案，Linux使用�
 ▸ keep_alive
 ▸ youtube-dl
 ```
-**P.S.** *除`discord.py`和`asyncio`外，其餘請自行斟酌決定是否要使用，部份為安裝Python時就有的套件。*
+## License
+See the license at `LICENSE`.
 
-Thanks to KL AE#2190 to add something.
+## Special Thanks
+Thanks to KL AE#2190 edit `run.bat` and `requirements.txt`.
