@@ -21,7 +21,7 @@ class Event(Cog_Extension):
             await msg.channel.send(ABAB_reply)
 
         if msg.content == "Morning" and msg.author != self.bot.user:
-            await msg.reply("Morning~")
+            await msg.reply("Good Morning~")
 
         react_OAO_select= ["<:emm_:949465980378173480>", "<:Thonk:916885587447934986>"]
         react_OAO= random.choice(react_OAO_select)
