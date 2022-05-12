@@ -7,10 +7,11 @@ Just a easy&noob bot.
 ## I Want The Same One of Myself 
 Just Do it by yourself.
 You can fork this project，change the `token` to your bot in `config.json`.
++ Add emojis to your server & Edit emojis name
 And you can go to learn how to code a `Cog_Extension`.
 The code is the most basic.
 
-Replit Users: Fork this repo and install packages, at last, use `bash run.sh` to run the bot.
+Replit Users: Fork this repo and install packages + edit config, at last, use `bash run.sh` to run the bot.
 
 ## Attention
 The Bot is written with `Python 3.8`.
