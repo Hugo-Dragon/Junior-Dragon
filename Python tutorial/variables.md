@@ -62,3 +62,28 @@ print(z)
 
 # Output
 use `print(x, y, z)` instead of `print(x+y+z)` else it will not show the spaces between them
+
+# Global
+```py
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+
+
+
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+```
