@@ -1,13 +1,13 @@
 {
-    "token":"token",
+    "token":"Put your token here",
 
-    "idkqwq":"/home/huanchieh/Python/Discord.Bot/PY_Attano/pic/窩不知道.gif",
+    "idkqwq":"/pic/窩不知道.gif",
 
     "thonk":["<:thonk:916885587447934986>", "<:RainbowThonk:916885466710683719>", "<:SuperThonk:916885451514732545>", "<:10thonk:933293171696345088>", "<:BlueThonk:933293184979726337>", "<:DistrotionThonk:933293151806951435>", "<:owoThonk:933293060006219826>", "<:PistolThonk:933293032911020042>", "<:RedThonk:933293091799040040>", "<:RayUglyThonk:933293047750475796>", "<:SuperThonk:933293464307793920>", "<:Thongk:933293196736348170>", "<:_w_:916885523975536710>", "<:Attanothink:916885436012572722>", "<:Smilethonk:933293128855740456>"],
 
     ".3.":["030", ".3.", "ABAB", "<:AB:949465980520792124>"],
 
-    "ABAB":["ABAB", "阿巴阿巴", "<:AB:949465980520792124>"],
+    "ABAB":["ABAB", "<:AB:949465980520792124>"],
     "ABAB_reply":"<:AB:949465980520792124>"
 
 }
