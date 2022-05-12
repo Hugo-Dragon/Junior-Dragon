@@ -38,4 +38,4 @@ $ python app.py
 See the license at `LICENSE`.
 
 ## Special Thanks
-Thanks to KL AE#2190 edit `run.bat` and `requirements.txt`.
+Thanks to KL AE#2160 edit `run.bat` and `requirements.txt`.
