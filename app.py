@@ -8,12 +8,10 @@ import discord
 from discord.ext import commands
 import keep_alive
 
-import json
-with open("config.json", mode="r", encoding="utf8") as jfile:
-    conf = json.load(jfile)
+import json, random, datetime, time, asyncio, os, pytz, keep_alive
 
-import random, datetime, time, asyncio, os, pytz
-import keep_alive
+with open("config.json", mode="r", encoding="utf8") as config:
+    conf = json.load(config)
 
 bot = commands.Bot(command_prefix=">")
 bot.remove_command("help")
@@ -66,6 +64,7 @@ async def Main(ctx):
     embed.add_field(name="dev", value="The dev of the bot", inline=False)
     embed.add_field(name="clean", value="Clean the specified number of messages for the channel", inline=False)
     embed.add_field(name="presence", value="Change the rich presence of the bot.*Still in development", inline=False)
+    embed.add_field(name="botinfo", value="The info of the bot", inline=False)
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
 
@@ -93,7 +92,7 @@ async def Music(ctx):
 @help.command()
 async def Game(ctx):
     embed=discord.Embed(title="Game", description="Game Commands *Still in development", color=0x00d103)
-    embed.add_field(name="gn", value="Guess the Number", inline=False)
+    embed.add_field(name="gtn", value="Guess the Number", inline=False)
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
 

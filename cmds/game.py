@@ -1,12 +1,16 @@
+from distutils.command.config import config
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
 
+<<<<<<< HEAD
 import asyncio, time, datetime, pytz, random
+=======
+import json, asyncio, time, datetime, pytz, random
+>>>>>>> 70bc067eb697736fa4c3ccb26be5966801ac26d4
 
-import json
-with open("config.json", mode="r", encoding="utf8") as jfile:
-    conf = json.load(jfile)
+with open("config.json", mode="r", encoding="utf8") as config:
+    conf = json.load(config)
     
 class Game(Cog_Extension):
     @commands.command()
