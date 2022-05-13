@@ -10,4 +10,5 @@ random
 youtube-dl>=2021.12.17
 pip>=20.0.2
 flask
+requests
 ~        
