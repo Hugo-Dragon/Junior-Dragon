@@ -3,6 +3,7 @@ echo 1. Run the bot
 echo 2. Install packages
 echo 3. Exit
 choice /c 123 /n /m "Choice:"
+:: Error Fixed (Wrong Choice Detected)
 :: Note - list ERRORLEVELS in decreasing order
 IF ERRORLEVEL 3 GOTO optone
 IF ERRORLEVEL 2 GOTO install
