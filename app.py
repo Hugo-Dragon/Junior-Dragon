@@ -7,12 +7,10 @@
 import discord
 from discord.ext import commands
 
-import json
-with open("config.json", mode="r", encoding="utf8") as jfile:
-    conf = json.load(jfile)
+import json, random, datetime, time, asyncio, os, pytz, keep_alive
 
-import random, datetime, time, asyncio, os, pytz
-import keep_alive
+with open("config.json", mode="r", encoding="utf8") as config:
+    conf = json.load(config)
 
 bot = commands.Bot(command_prefix=">")
 bot.remove_command("help")
