@@ -23,10 +23,10 @@ timestamp= time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
 @bot.event
 async def on_ready():
-    print("Bot logged")
+    print("Bot logged in")
     print(bot.user)
     print("-----------") 
-    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.listening, name="Spotify"))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.listening, name="恐龍"))
 
 @bot.command()
 async def load(ctx, extension):
@@ -36,12 +36,12 @@ async def load(ctx, extension):
 @bot.command()
 async def unload(ctx, extension):
     bot.unload_extension(f"cmds.{extension}")
-    await ctx.send(f"Un-loaded {extension} done.")
+    await ctx.send(f"Unloaded {extension} done.")
 
 @bot.command()
 async def reload(ctx, extension):
     bot.reload_extension(f"cmds.{extension}")
-    await ctx.send(f"Re-loaded {extension} done.")
+    await ctx.send(f"Reloaded {extension} done.")
 
 @bot.group(invoke_without_command=True)
 async def help(ctx):
@@ -73,7 +73,7 @@ async def Main(ctx):
 async def React(ctx):
     twtz = pytz.timezone("Asia/Taipei")
     embed=discord.Embed(title="React", description="React commands", color=0x00d103)
-    embed.add_field(name="idk", value="Sent a \"窩不知道gif\"", inline=False)
+    embed.add_field(name="idk", value="Sent a \"窩不知道\"gif", inline=False)
     embed.add_field(name="thonk", value="Sent a thonk texture", inline=False)
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
