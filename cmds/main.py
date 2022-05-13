@@ -30,7 +30,10 @@ class Main(Cog_Extension):
     async def say(self, ctx,  *,msg):
         await ctx.message.delete()
         await ctx.send(msg)
-
+    @commands.command()
+    async def echo(self, ctx,  *,msg):
+        await ctx.message.delete()
+        await ctx.send(msg)
     @commands.command()
     async def repeat(self, ctx, *,msg):
         await ctx.send(msg)

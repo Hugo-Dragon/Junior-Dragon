@@ -60,7 +60,7 @@ async def Main(ctx):
     twtz = pytz.timezone("Asia/Taipei")
     embed=discord.Embed(title="Main", description="The Main commands", color=0x0084ff)
     embed.add_field(name="ping", value="See the ping of the bot", inline=False)
-    embed.add_field(name="say", value="Let the bot to say a messag.", inline=False)
+    embed.add_field(name="say", value="Let the bot to say a message. \nAliases: `echo`", inline=False)
     embed.add_field(name="repeat", value="Let the bot to repeat a message", inline=False)
     embed.add_field(name="botabout", value="The introduce of the bot", inline=False)
     embed.add_field(name="dev", value="The dev of the bot", inline=False)
