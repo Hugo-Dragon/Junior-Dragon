@@ -54,6 +54,7 @@ class Main(Cog_Extension):
     @commands.command()
     async def botinfo(self, ctx):
         embed=discord.Embed(title="Bot Info", description="This bot is make by 恐龍#2549\nthis command is make by KL AE#2160\nLanguage: 🐍 Python\nVersion: 3.8 PY & 1.7.3 D.PY", color=random.randrange(0, 16777216)) # random color
+        await ctx.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(Main(bot))
