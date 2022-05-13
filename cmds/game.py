@@ -10,7 +10,7 @@ with open("config.json", mode="r", encoding="utf8") as config:
     
 class Game(Cog_Extension):
     @commands.command()
-    async def gn(self, ctx):
+    async def gtn(self, ctx):
         def check(m):
             return m.author == ctx.author and m.channel == ctx.message.channel 
         number = random.randint(1,101) # Fixed Error (must add 1 to largest int)
