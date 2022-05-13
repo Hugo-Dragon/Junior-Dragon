@@ -2,7 +2,7 @@
 A Simple Discord bot that written with `discord.py` (Python)
 
 ## Introduce
-Just a easy&noob bot.
+Just a easy & noob bot.
 
 ## I Want The Same One of Myself 
 Just Do it by yourself.
@@ -40,3 +40,9 @@ See the license at `LICENSE`.
 
 ## Special Thanks
 Thanks to KL AE#2160 edit `run.bat` and `requirements.txt`.
+
+## Contributors
+
+> KL AE#2160
+
+> 恐龍#2549
