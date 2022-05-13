@@ -1,6 +1,7 @@
-import discord
-from discord.ext import commands
+import discord # Unused Import
+from discord.ext import commands 
 from core.classes import Cog_Extension
+
 
 import json, random, datetime, asyncio
 with open("config.json", mode="r", encoding="utf8") as jfile:
