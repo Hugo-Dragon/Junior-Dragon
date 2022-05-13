@@ -97,6 +97,12 @@ async def Game(ctx):
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
 
+@help.command()
+async def Fun(ctx):
+    embed=discord.Embed(title='Fun', description='Fun Commands *Still In Development*', color=0x00d103)
+    embed.add_field(name='nitro', value='send a nitro to you [rickroll lol]', inline=False)
+    embed.set_footer(text=timestamp)
+    await ctx.send(embed=embed)
 
 for filename in os.listdir("./cmds"):
     if filename.endswith(".py"):
