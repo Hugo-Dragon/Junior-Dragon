@@ -63,6 +63,7 @@ async def Main(ctx):
     embed.add_field(name="dev", value="The dev of the bot", inline=False)
     embed.add_field(name="clean", value="Clean the specified number of messages for the channel", inline=False)
     embed.add_field(name="presence", value="Change the rich presence of the bot.*Still in development", inline=False)
+    embed.add_field(name="botinfo", value="The info of the bot", inline=False)
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
 
@@ -90,7 +91,7 @@ async def Music(ctx):
 @help.command()
 async def Game(ctx):
     embed=discord.Embed(title="Game", description="Game Commands *Still in development", color=0x00d103)
-    embed.add_field(name="gn", value="Guess the Number", inline=False)
+    embed.add_field(name="gtn", value="Guess the Number", inline=False)
     embed.set_footer(text=timestamp)
     await ctx.send(embed=embed)
 
