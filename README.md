@@ -2,16 +2,10 @@
 A Simple Discord bot that written with `discord.py` (Python)
 
 ## Introduce
-Just a easy&noob bot.
+Just a easy & noob bot.
 
 ## I Want The Same One of Myself 
-Just Do it by yourself.
-You can fork this project，change the `token` to your bot in `config.json`.
-+ Add emojis to your server & Edit emojis name
-And you can go to learn how to code a `Cog_Extension`.
-The code is the most basic.
-
-Replit Users: Fork this repo and install packages + edit config, at last, use `bash run.sh` to run the bot.
+Please dm owner (恐龍) before forking. This source is make by him. Always he will allow, but I (KL AE) edit some of the code. He need to check before allowing u to do so :/
 
 ## Attention
 The Bot is written with `Python 3.8`.
@@ -40,3 +34,9 @@ See the license at `LICENSE`.
 
 ## Special Thanks
 Thanks to KL AE#2160 edit `run.bat` and `requirements.txt`.
+
+## Contributors
+
+> KL AE#2160
+
+> 恐龍#2549
