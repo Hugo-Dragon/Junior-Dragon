@@ -2,11 +2,10 @@ import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
 
-import json
+import json, random, datetime, asyncio
 with open("config.json", mode="r", encoding="utf8") as jfile:
     conf = json.load(jfile)
 
-import random, datetime, asyncio
 
 class Event(Cog_Extension):
     @commands.Cog.listener() 
