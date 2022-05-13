@@ -2,6 +2,7 @@ from click import command
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
+import random
 
 import json
 with open("config.json", mode="r", encoding="utf8") as jfile:
@@ -49,6 +50,10 @@ class Main(Cog_Extension):
         embed.add_field(name="Bot's Manage", value="恐龍#2549", inline=True)
         embed.add_field(name="P.S.", value="It's all by 恐龍#2549 xd", inline=True)
         embed.set_footer(text=timestamp)
+        await ctx.send(embed=embed)
+    @commands.command()
+    async def botinfo(self, ctx):
+        embed=discord.Embed(title="Bot Info", description="This bot is make by 恐龍#2549\nthis command is make by KL AE#2160\nLanguage: 🐍 Python\nVersion: 3.8 PY & 1.7.3 D.PY", color=random.randrange(0, 16777216)) # random color
         await ctx.send(embed=embed)
 
 def setup(bot):
